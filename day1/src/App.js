@@ -9,14 +9,18 @@ import Counter from "./components/counter/counter";
 // import ButtonEx from "./components/ButtonEx/ButtonEx";
 import Menu from "./components/menu/menu";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Login from "./components/login/login";
 
 function App() {
   return (
     <div className="App">
-      Welcome to Functional Components...Trainer Prasanna <br />
+      {/* sWelcome to Functional Components...Trainer Prasanna  */}
+      <br />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Menu />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/menu" element={<Menu />} />
+
           <Route path="/first" element={<First />} />
           <Route path="/second" element={<Second />} />
           <Route
